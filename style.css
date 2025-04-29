@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
 }
-
+body{
+    background-color: #1f201f;
+    color: white;
+}
 header {
   height: 100vh;
   background-image: url("./pictures/header-back.gif");
@@ -83,7 +86,120 @@ header nav ul a:hover {
 }
 
 .header-content .social-network a:hover {
-background-color: #194950;
+  background-color: #194950;
 }
 
 /* Header contetn end */
+
+/* main start*/
+
+.about-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 70%;
+  height: 40vh;
+  text-align: justify;
+}
+
+.about-content p{
+    font-size: 20px;
+}
+
+.projects-container {
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+  text-align: justify;
+  /* background-color: gray; */
+  height: 160vh;
+
+}
+
+
+
+
+/* Grid start */
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+  width: 90%;
+  height: 100vh;
+}
+
+/* Big card start */
+
+.big-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row: span 3;
+  background-color: #ffffff;
+  gap: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  height: 100%;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.big-card:hover {
+  transform: translateY(-5px);
+}
+.grid-container img {
+  width: 100%;
+}
+
+.big-card .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 96%;
+  height: 100%;
+}
+
+/* Big card end */
+
+/* Small card stat */
+.small-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-row: span 2;
+  gap: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  /* height: 60vh; */
+
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.small-card:hover {
+  transform: translateY(-5px);
+}
+
+.small-card .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 95%;
+  height: 100%;
+}
+/* Small card end */
+/* Grid end */
+
+/* main end*/
