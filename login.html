@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul>
+          <a href="./">Home</a>
+          <a href="./register.html">Register</a>
+        </ul>
+      </nav>
+      <div class="login-container">
+        <div class="login-card">
+            <h1>Sign in</h1>
+            <form>
+                <div style="display: flex;">
+                    <img src="./icons/user.png" alt="" width="20" style="object-fit: contain;">
+                    <input type="text" placeholder="Your Account" required autofocus>
+                </div>
+                <div style="display: flex;">
+                    <img src="./icons/padlock.png" alt="" width="20" style="object-fit: contain" >
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div >
+                    <input type="checkbox">
+                    <label for="remember">Remember me</label>
+                </div>
+                <button type="submit">Sign In</button>
+            </form>
+            <div >
+                <p>Don't have an account? <a class="sign-up-link" href="./register.html">Sign up</a></p>
+            </div>
+        </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

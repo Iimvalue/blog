@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+main {
+  height: 100vh;
+  background-image: url("./pictures/header-back.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+main nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  width: 96%;
+  height: 10vh;
+}
+
+main nav ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  border: 1px solid #194950;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+  width: 7vw;
+  height: 6vh;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+main nav ul a:hover {
+  background-color: #194950;
+}
+
+.sign-up-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: gray; */
+  height: 80vh;
+}
+
+.sign-up-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 40vw;
+  height: 70vh;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+  backdrop-filter: blur(8px); /* Blur the background behind the card */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+}
+
+.sign-up-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sign-up-card form input {
+  list-style: none;
+  outline: none;
+  border: none;
+  color: white;
+  border-bottom: 1px solid #194950;
+  background: transparent;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 15px;
+}
+
+.sign-up-card form button {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid #194950;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+  width: 15vw;
+  height: 6vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sign-up-card form button:hover {
+  background-color: #194950;
+}
+
+.sign-up-link {
+  color: white;
+}
+
+.sign-up-link:hover {
+  color: #194950;
+}
