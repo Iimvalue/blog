@@ -108,6 +108,7 @@ header nav ul a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   width: 70%;
   height: 60vh;
